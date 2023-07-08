@@ -1,0 +1,63 @@
+@import "./colors.scss";
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: $forthColor;
+    display: flex;
+    justify-content: space-between;
+
+    >.header_left_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >a {
+            text-decoration: none;
+            padding: 1.5rem;
+            font: 900 1.4rem "Roboto";
+            color: $secondColor;
+
+            &:hover {
+                color: $firstColor;
+            }
+        }
+    }
+
+    >.header_right_container {
+        display: flex;
+        align-items: center;
+
+        >a {
+            text-decoration: none;
+            padding: 1.5rem;
+            font: 900 2rem "Roboto";
+            color: $secondColor;
+
+            &:hover {
+                color: $firstColor;
+            }
+            >.cart_count{
+                background-color: bisque;
+                height: 15px;
+                width: 15px;
+                font: 600 0.8rem "Roboto";
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                transform: translate(62% ,-185%);
+            }
+        }
+
+        >svg {
+            font: 900 2rem "Roboto";
+            padding-right: 1.4rem;
+
+            &:hover {
+                color: $firstColor;
+            }
+        }
+    }
+
+}
