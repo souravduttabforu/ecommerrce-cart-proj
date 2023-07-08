@@ -67,7 +67,7 @@ const Home = ({ addNewData }) => {
 
   return (
     <div className='home'>
-      //itrateing through items and show the components
+      {/* itrateing through items and show the components */}
       {listItems.map((item) => (
         isEditOpen && item.id === editId ? <EditCard
           key={item.id}
